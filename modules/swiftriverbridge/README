@@ -1,0 +1,27 @@
+In this directory I would expect to see the Ushahidi plugin code that
+accessed the local install of Swiftriver.
+
+I would expect this to be a mixture of Ushahidi centric classes and functions
+with function names that match the operations that Ushahidi id expecting:
+
+for example:
+
+A class called SwiftriverSourceBridge
+
+with function like:
+
+listalltwitterhastags()
+savetwitterhashtags()
+listallfeeds()
+savefeedlist()
+
+etc.
+
+Then I would expect to see the code from the SwiftriverLocalAPIHook folder that
+offers Swiftriver centric functions.
+
+This structure allows Ushahidi developers to use Switriver without having to
+know the inner workings of Swiftriver.
+
+It's your job to write the code in the Ushahidi centric classes to allow this
+to happen.
